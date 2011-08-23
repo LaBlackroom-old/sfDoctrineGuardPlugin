@@ -29,12 +29,8 @@
         <target>Répéter le mot de passe</target>
       </trans-unit>
       <trans-unit>
-        <source>Remember me</source>
-        <target>Rester actif</target>
-      </trans-unit>
-      <trans-unit>
         <source>is active</source>
-        <target>Utilisateur actif ?</target>
+        <target>Est actif ?</target>
       </trans-unit>
       <trans-unit>
         <source>Is super admin</source>
@@ -48,6 +44,42 @@
         <source>Permissions</source>
         <target>Droit d'accès</target>
       </trans-unit>
+      <trans-unit>
+        <source>User list</source>
+        <target>Liste des utilisateurs</target>
+      </trans-unit>
+      <trans-unit>
+        <source>New User</source>
+        <target>Nouvel utilisateur</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Group list</source>
+        <target>Liste des groupes</target>
+      </trans-unit>
+      <trans-unit>
+        <source>New Group</source>
+        <target>Nouveau groupe</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Permission list</source>
+        <target>Liste des permissions</target>
+      </trans-unit>
+      <trans-unit>
+        <source>New Permission</source>
+        <target>Nouvelle permission</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Editing User "%%username%%"</source>
+        <target>Editer l'utilisateur "%%username%%"</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Editing Group "%%name%%"</source>
+        <target>Editer le group "%%name%%"</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Editing Permission "%%name%%"</source>
+        <target>Editer la Permission "%%name%%"</target>
+      </trans-unit>      
       <trans-unit>
         <source>Users list</source>
         <target>Utilisateurs</target>
