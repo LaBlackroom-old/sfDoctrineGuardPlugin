@@ -179,10 +179,10 @@ abstract class PluginsfGuardUser extends BasesfGuardUser
    *
    * @return boolean
    */
-  public function hasPermission($name)
+  public function hasPermission($id)
   {
     $this->loadGroupsAndPermissions();
-    return isset($this->_allPermissions[$name]);
+    return isset($this->_allPermissions[$id]);
   }
 
   /**
@@ -210,14 +210,14 @@ abstract class PluginsfGuardUser extends BasesfGuardUser
       $permissions = $this->getPermissions();
       foreach ($permissions as $permission)
       {
-        $this->_allPermissions[$permission->getName()] = $permission;
+        $this->_allPermissions[$permission->getId()] = $permission;
       }
 
       foreach ($this->getGroups() as $group)
       {
         foreach ($group->getPermissions() as $permission)
         {
-          $this->_allPermissions[$permission->getName()] = $permission;
+          $this->_allPermissions[$permission->getId()] = $permission;
         }
       }
     }
@@ -248,7 +248,7 @@ abstract class PluginsfGuardUser extends BasesfGuardUser
       $permissions = $this->getPermissions();
       foreach ($permissions as $permission)
       {
-        $this->_permissions[$permission->getName()] = $permission;
+        $this->_permissions[$permission->getId()] = $permission;
       }
     }
     
@@ -257,9 +257,11 @@ abstract class PluginsfGuardUser extends BasesfGuardUser
       $groups = $this->getGroups();
       foreach ($groups as $group)
       {
-        $this->_groups[$group->getName()] = $group;
+        $this->_groups[$group->getId()] = $group;
       }
     }
+    
+    
   }
 
   /**

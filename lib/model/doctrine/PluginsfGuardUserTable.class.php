@@ -23,7 +23,7 @@ abstract class PluginsfGuardUserTable extends Doctrine_Table
     $query = Doctrine_Core::getTable('sfGuardUser')->createQuery('u')
       ->where('u.username = ?', $username)
       ->addWhere('u.is_active = ?', $isActive)
-    ;
+      ->limit(1);
 
     return $query->fetchOne();
   }
@@ -41,7 +41,7 @@ abstract class PluginsfGuardUserTable extends Doctrine_Table
     $query = Doctrine_Core::getTable('sfGuardUser')->createQuery('u')
       ->where('u.username = ? OR u.email_address = ?', array($username, $username))
       ->addWhere('u.is_active = ?', $isActive)
-    ;
+      ->limit(1);
 
     return $query->fetchOne();
   }

@@ -312,9 +312,9 @@ class sfGuardSecurityUser extends sfBasicSecurityUser
    * @param string $name The permission name
    * @return string
    */
-  public function hasPermission($name)
+  public function hasPermission($id)
   {
-    return $this->getGuardUser() ? $this->getGuardUser()->hasPermission($name) : false;
+    return $this->getGuardUser() ? $this->getGuardUser()->hasPermission($id) : false;
   }
 
   /**
